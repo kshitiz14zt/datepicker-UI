@@ -4,35 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>DatePicker</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: content-box;
+        }
         .parent{
             /* width: 200px;
             height: 100px;
             border: 2px solid black; */
             display: flex;
+            margin: auto;
+            justify-content: center;
         }
         .datePicker{
             width: 200px;
             height: 48px;
             border: 2px solid black;
+            font-size: 24px;
+            padding-left: 18px;
         }
         ::placeholder{
             color: black;
-            font-size: 20px;
-            padding: 18px;
+            font-size: 24px;
+            padding: 18px 18px 18px  0;
+            font-family: "Lato";
         }
-        .claendar-button{
+        .calendar-button{
             /* margin-left: 20px; */
             width: 50px;
             border: 2px solid black;
         }
+        .calender-img{
+            width: 34px;
+        }
+        .lato-regular {
+            font-family: "Lato";
+            font-weight: 400;
+            font-style: normal;
+        }
     </style>
 </head>
 <body>
-    <div class="parent">
-        <input class="datePicker" placeholder="dd/mm/yyyy">
-        <button type="button" class="claendar-button"><i class="fa-regular fa-calendar-days"></i></button>
+    <div class="parent lato-regular">
+        <input type="text" class="datePicker" placeholder="dd / mm / yyyy" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}">
+        <button class="calendar-button"><img class="calender-img" src="calender.png" alt=""></button>
     </div>
 </body>
 </html>
