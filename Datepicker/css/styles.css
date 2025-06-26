@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+.parent {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  position: relative;
+}
+.date-picker {
+  width: 200px;
+  height: 48px;
+  border: 2px solid black;
+  font-size: 24px;
+  padding-left: 18px;
+  border-right: 0;
+}
+::placeholder {
+  color: black;
+  font-size: 24px;
+  padding: 18px 18px 18px 0;
+  font-family: "Lato";
+}
+.calendar-button {
+  width: 50px;
+  border: 2px solid black;
+}
+.calendar-img {
+  width: 34px;
+}
+.lato-regular {
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: normal;
+}
+.calendar {
+  position: relative;
+  border: 2px solid #333;
+  padding: 10px;
+  width: 250px;
+  /* height: auto; */
+  margin: auto;
+  margin-top: 4px;
+}
+.calendar-head {
+  /* font-weight: bold; */
+}
+.fa-caret-right {
+  position: absolute;
+  right: 18px;
+  top: 6px;
+  font-size: 2em;
+}
+.fa-caret-left {
+  position: absolute;
+  left: 18px;
+  top: 6px;
+  font-size: 2em;
+}
+.months{
+  font-family: "Lato";
+  font-size: 20px;
+  padding-left: 2.6em;
+}
+/* .calendar-days{
+  display: flex;
+  margin-top: 14px;
+  font-family: "Lato";
+} */
+/* .calendar > div{
+  gap: 28px;
+  border: 1px solid gray;
+} */
+.calendar-dates, .calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
+  text-align: center;
+}
+.calendar-days {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.calendar-dates div {
+  padding: 6px;
+  border: 1px solid #ccc;
+  margin: 1px;
+}
