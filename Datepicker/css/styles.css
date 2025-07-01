@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: content-box;
 }
+.Container{
+  padding: 26px 40px 40px 40px;
+  width: 100%;
+  /* max-width: 820px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 20px auto;
+}
 .parent {
   display: flex;
   margin: auto;
@@ -10,21 +17,21 @@
   position: relative;
 }
 .date-picker {
-  width: 200px;
-  height: 48px;
+  width: 78%;
+  height: 60px;
   border: 2px solid black;
-  font-size: 24px;
+  font-size: 2em;
   padding-left: 18px;
   border-right: 0;
 }
 ::placeholder {
   color: black;
-  font-size: 24px;
+  font-size: 1em;
   padding: 18px 18px 18px 0;
   font-family: "Lato";
 }
 .calendar-button {
-  width: 50px;
+  width: 72px;
   border: 2px solid black;
 }
 .calendar-img {
@@ -38,31 +45,32 @@
 .calendar {
   position: relative;
   border: 2px solid #333;
-  padding: 10px;
-  width: 250px;
+  /* padding: 10px; */
+  width: 99%;
   /* height: auto; */
-  margin: auto;
+  /* margin: auto; */
   margin-top: 4px;
 }
 .calendar-head {
   /* font-weight: bold; */
+  margin-top: 10px;
 }
 .fa-caret-right {
   position: absolute;
   right: 18px;
-  top: 6px;
-  font-size: 2em;
+  top: 2px;
+  font-size: 3em;
 }
 .fa-caret-left {
   position: absolute;
   left: 18px;
-  top: 6px;
-  font-size: 2em;
+  top: 2px;
+  font-size: 3em;
 }
 .months{
   font-family: "Lato";
-  font-size: 20px;
-  padding-left: 2.6em;
+  font-size: 26px;
+  padding-left: 26%;
 }
 /* .calendar-days{
   display: flex;
@@ -80,14 +88,81 @@
   text-align: center;
 }
 .calendar-days {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 3px solid #000000;
   padding-bottom: 4px;
-  margin-bottom: 4px;
+  /* margin-bottom: 4px; */
   font-weight: bold;
   margin-top: 10px;
 }
 .calendar-dates div {
   padding: 6px;
-  border: 1px solid #ccc;
-  margin: 1px;
+  /* border: 1px solid #ccc; */
+  border-bottom: 2px solid rgb(99, 98, 98);
+  border-right: 2px solid rgb(110, 109, 109);
+}
+@media screen and (min-width:768px){
+  .parent{
+    height: 4em;
+  }
+  .date-picker{
+    width: 88%;
+  }
+  .calendar-button{
+    width: 12%;
+  }
+  .calendar{
+    width: 99.5%;
+    margin-top: 10px;
+  }
+  .fa-caret-left{
+    font-size: 4em;
+    top: 4px;
+  }
+  .fa-caret-right{
+    font-size: 4em;
+    top: 4px;
+  }
+  .months{
+    font-size: 42px;
+  }
+  ::placeholder{
+    font-size: 34px;
+  }
+  .date-picker{
+    height: auto;
+  }
+  .calendar-dates div {
+    font-size: 30px;
+  }
+  .calendar-days div{
+    font-size: 30px;
+  }
+  .calendar-days{
+    margin-top: 24px;
+  }
+  .calendar-head{
+    margin-top: 10px;
+  }
+  .calendar-dates div:nth-child(35){
+    border-bottom: 0px;
+  }
+  .calendar-dates div:nth-child(7n){
+    border-right: 0px;
+  }
+  .calendar-dates div:nth-child(29), 
+  .calendar-dates div:nth-child(30),
+  .calendar-dates div:nth-child(31), 
+  .calendar-dates div:nth-child(32),
+  .calendar-dates div:nth-child(33),
+  .calendar-dates div:nth-child(34){
+    border-bottom: 0px;
+  }
+}
+@media screen and (min-width:1024px) {
+  .Container{
+    padding: 26px 40px 40px 40px;
+    width: 100%;
+    max-width: 720px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 80px auto;  }
 }
