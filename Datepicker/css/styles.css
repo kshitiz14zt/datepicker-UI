@@ -4,9 +4,6 @@
   box-sizing: content-box;
 }
 .Container{
-  /* padding: 20px; */
-  /* width: 100%; */
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   margin: 20px auto;
 }
 .parent {
@@ -53,7 +50,7 @@
   margin-top: 4px;
 }
 .calendar-days div{
-  font-size: 22px;
+  font-size: 24px;
 }
 .calendar-head {
   margin-top: 10px;
@@ -82,8 +79,7 @@
 }
 .calendar-days {
   border-bottom: 3px solid #000000;
-  padding-bottom: 4px;
-  /* font-weight: bold; */
+  padding-bottom: 12px;
   margin-top: 10px;
   font-family: 'Lato';
   margin-top: 16px;
@@ -109,9 +105,9 @@
   border-bottom: 0px;
 }
 .calendar-dates div p{
-  font-weight: 600;
-  font-size: 20px;
-  font-family: 'Lato';
+  font-weight: 500;
+  font-size: 24px;
+  font-family: "Nunito Sans";
   position: relative;
   top: 20px;
 }
@@ -129,7 +125,7 @@
     width: 12%;
   }
   .calendar{
-    width: 99.6%;
+    width: 99%;
     margin-top: 10px;
   }
   .fa-caret-left{
@@ -171,10 +167,8 @@
 }
 @media screen and (min-width:1024px) {
   .Container{
-    /* padding: 26px 40px 40px 40px; */
     width: 100%;
     max-width: 600px;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     margin: 80px auto 80px auto ;  
   }
 }
