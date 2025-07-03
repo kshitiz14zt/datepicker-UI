@@ -39,7 +39,7 @@
   cursor: pointer;
 }
 .calendar-img {
-  width: 34px;
+  width: 50px;
 }
 .lato-regular {
   font-family: "Lato";
@@ -49,11 +49,12 @@
 .calendar {
   position: relative;
   border: 2px solid #333;
-  width: 99%;
+  width: 98%;
   margin-top: 4px;
 }
 .calendar-head {
   margin-top: 10px;
+  text-align: center;
 }
 .fa-caret-right {
   position: absolute;
@@ -70,7 +71,6 @@
 .months{
   font-family: "Lato";
   font-size: 26px;
-  padding-left: 26%;
 }
 .calendar-dates, .calendar-days {
   display: grid;
@@ -105,8 +105,14 @@
 }
 .calendar-dates div p{
   margin-top: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Lato';
 }
 @media screen and (min-width:768px){
+  .Container{
+    width: 74%;
+  }
   .parent{
     height: 4em;
   }
@@ -117,7 +123,7 @@
     width: 12%;
   }
   .calendar{
-    width: 99.5%;
+    width: 98.8%;
     margin-top: 10px;
   }
   .fa-caret-left{
@@ -130,7 +136,6 @@
   }
   .months{
     font-size: 42px;
-    padding-left: 28%;
   }
   ::placeholder{
     font-size: 34px;
@@ -140,7 +145,7 @@
   }
   .calendar-dates div {
     font-size: 30px;
-    height: 72px;
+    height: 84px;
     position: relative;
   }
   .calendar-days div{
@@ -152,12 +157,16 @@
   .calendar-head{
     margin-top: 10px;
   }
+  .calendar-dates div p{
+    font-size: 34px;
+    margin-top: 26px;
+  }
 }
 @media screen and (min-width:1024px) {
   .Container{
     padding: 26px 40px 40px 40px;
     width: 100%;
-    max-width: 720px;
+    max-width: 600px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 80px auto 80px auto ;  
   }
